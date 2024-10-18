@@ -1,0 +1,71 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/svg-loader.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "svgLoader",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tag",
+              "static": true
+            },
+            {
+              "kind": "field",
+              "name": "haxProperties",
+              "static": true,
+              "description": "haxProperties integration via file reference"
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "\"\""
+            },
+            {
+              "kind": "field",
+              "name": "goal",
+              "privacy": "public",
+              "attribute": "goal"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "goal",
+              "fieldName": "goal"
+            }
+          ],
+          "mixins": [
+            {
+              "name": "DDDSuper",
+              "package": "@haxtheweb/d-d-d/d-d-d.js"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "svgLoader",
+          "declaration": {
+            "name": "svgLoader",
+            "module": "src/svg-loader.js"
+          }
+        }
+      ]
+    }
+  ]
+}
